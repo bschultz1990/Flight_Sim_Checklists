@@ -1,1 +1,127 @@
-﻿
+﻿:root {
+  --nav-button-size: 2rem;
+  --margin-primary: 0.125rem;
+  --color-primary: lightblue;
+  --color-secondary: rgb(222, 222, 222);
+  --color-done: rgb(125, 125, 125);
+}
+
+.badge {
+  background-color: black;
+  color: white;
+}
+
+.mcdu-orange {
+  background-color: none;
+  color: orange;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#title {
+  /* background-color: blue; */
+  text-align: center;
+  /* text-decoration-line: underline; */
+  font-weight: bold;
+  height: var(--nav-button-size);
+}
+
+.outer-container {
+  max-height: 100%
+}
+
+.subtitle {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 var(--margin-primary);
+  background-color: var(--color-primary);
+  font-weight: bold;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  width: var(--nav-button-size);
+  height: var(--nav-button-size);
+  margin: 0 var(--margin-primary);
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: var(--color-secondary);
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: pink; */
+  padding: var(--margin-primary) 0rem;
+  cursor: pointer;
+}
+
+.line:hover {
+  background-color: var(--color-secondary);
+}
+
+.line-left,
+.line-right {
+  text-transform: uppercase;
+}
+
+.line-center {
+  flex-grow: 1;
+}
+
+.line-center {
+  border-bottom: 1px dotted black;
+}
+
+.line-divider {
+  text-align: center;
+  font-weight: bold;
+  padding: var(--margin-primary) 0rem;
+}
+
+.line-spacer {
+  margin-top: 1rem;
+}
+
+.line-complete {
+  text-decoration: line-through;
+  /* color: lightgray; */
+  color: var(--color-done)
+    /* background-color: lightgreen; */
+}
+
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed;
+  bottom: 0; */
+}
+
+.bottom-nav button {
+  flex-grow: 1;
+  margin: 0 var(--margin-primary);
+  height: var(--nav-button-size);
+  cursor: pointer;
+  background-color: var(--color-primary);
+  font-weight: bold;
+  border: none;
+  color: black;
+
+}
+
+.bottom-nav button:hover {
+  background-color: var(--color-secondary);
+}
