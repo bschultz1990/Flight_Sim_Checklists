@@ -1,6 +1,7 @@
 ﻿:root {
   --nav-button-size: 2rem;
   --margin-primary: 0.125rem;
+  --margin-secondary: 0.25rem;
   --color-primary: lightblue;
   --color-secondary: rgb(222, 222, 222);
   --color-done: rgb(125, 125, 125);
@@ -20,11 +21,12 @@
 }
 
 #title {
-  /* background-color: blue; */
+  background-color: var(--color-primary);
   text-align: center;
-  /* text-decoration-line: underline; */
   font-weight: bold;
   height: var(--nav-button-size);
+  /* margin-bottom: var(--margin-secondary) */
+  margin: 0 var(--margin-primary);
 }
 
 .outer-container {
